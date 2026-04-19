@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Helvetica Neue", Arial, sans-serif;
+  
+  --color-primary: #0f172a;
+  --color-accent: #eab308; /* Updated to Gold to match signage */
+  --color-text-main: #334155;
+  --color-text-light: #64748b;
+  --color-bg-site: #f8fafc;
+  --color-border: #e2e8f0;
+  --color-white: #ffffff;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-site text-text-main font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .shadow-professional {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  }
+}
